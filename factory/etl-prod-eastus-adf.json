@@ -1,0 +1,9 @@
+{
+	"name": "etl-prod-eastus-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ebe370bf-5ce0-4117-9297-d350f8e12093",
+		"tenantId": "09aa62f1-6a2d-476e-b668-e67e11cbbfa6"
+	}
+}
