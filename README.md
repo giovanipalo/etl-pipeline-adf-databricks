@@ -4,20 +4,20 @@ Este projeto implementa um pipeline de ETL (Extract, Transform, Load) utilizando
 
 ## Estrutura do Projeto
 
-etl-pipeline-adf-databricks/
-├── adf/
-│ ├── datasets/ # Definições de datasets (entrada e saída)
-│ ├── linkedServices/ # Conexões com fontes e destinos (Web, ADLS, etc.)
-│ ├── pipelines/ # Pipelines do ADF para orquestração do ETL
-│ ├── triggers/ # (Vazio) Reservado para gatilhos agendados
-│ ├── publish_config.json # Configuração de publicação do ADF
-│ └── etl-prod-eastus-adf.json # Metadados da instância do Data Factory
-│
-├── databricks/
-│ └── notebooks/
-│ ├── silver_layer.dbc # Notebook Databricks: bronze → silver
-│ └── gold_layer.dbc # Notebook Databricks: silver → gold
+O repositório contém os seguintes diretórios e arquivos:
 
+- `adf/`: Contém todos os artefatos do Azure Data Factory.
+  - `datasets/`: Definições de datasets de entrada e saída.
+  - `linkedServices/`: Configurações de conexões com fontes e destinos (Web, ADLS, etc.).
+  - `pipelines/`: Pipelines do ADF para orquestrar o fluxo de dados.
+  - `triggers/`: (Vazio) Reservado para agendamentos futuros.
+  - `publish_config.json`: Configuração de publicação do ADF.
+  - `etl-prod-eastus-adf.json`: Metadados da instância do Data Factory.
+
+- `databricks/`: Contém os notebooks utilizados no processamento de dados.
+  - `notebooks/`:
+    - `silver_layer.dbc`: Notebook para transformação da camada bronze para silver.
+    - `gold_layer.dbc`: Notebook para transformação da camada silver para gold.
 
 ## Tecnologias Utilizadas
 
